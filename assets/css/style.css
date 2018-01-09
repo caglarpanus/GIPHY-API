@@ -1,0 +1,18 @@
+body{
+    background-color: lightblue;
+    margin: auto;
+    text-align: center;
+    padding: 0px 50px;
+}
+.jumbotron{
+    background-color: maroon;
+    color: white;
+    padding: 5px;
+    margin-bottom: 20px;
+    margin-top: 10px;
+}
+.container2{
+    background-color: cornsilk;
+    height: 530px;
+    padding-top: 10px;
+}
