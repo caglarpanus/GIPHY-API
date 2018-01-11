@@ -7,7 +7,7 @@ var searchedWords = ["Birds","Cars","Cats","Soccer","Funny","Jim Carrey","The Bi
 function renderButtons(){
 
     //this is necessary otherwise we will have repeat buttons
-    $("#gifsView").empty();
+    $("#gifButtons").empty();
       
     // Looping through the array of movies
 
@@ -16,7 +16,7 @@ function renderButtons(){
         //dynamicaly generating buttons for each movie in the array.
         var gifButtonShow = $("<button>");
 
-        gifButtonShow.addClass("action");
+        gifButtonShow.addClass("gifs");
 
         gifButtonShow.addClass("btn btn-info");
         // this classes was added to have space between buttons. CSS file was also updated. 
@@ -27,7 +27,7 @@ function renderButtons(){
         // Providing the button's text with a value
         gifButtonShow.text(searchedWords[i]);
 
-        $("#gifsView").append(gifButtonShow);
+        $("#gifButtons").append(gifButtonShow);
 
     }
 
@@ -42,14 +42,44 @@ event.preventDefault();
     // This line will grab the text from the input box
 
     var gifs = $("#gif-input").val().trim();
+    
+    if (gifs == ""){
+        return false //To block user from trying to add blank button.
+    } 
 
     //the things we searched for will be added to our selectedWords array.
+    
     searchedWords.push(gifs);
 
     renderButtons();
-})
+});
+//COULDNT FIGURE OUT!!! ASK!!!
+function removeLastGif(){
+    $("#removeGif").on("click", function(){
+        searchedWords.pop();
+        renderButtons();
+        return false;
+    })
+}
 
-var queryURL = "http://api.giphy.com/v1/gifs/search?q=" + selectedWords + "sPfklQzrEwIhwetFX6WCEWYYYPYirfPv";
+
+function displayGIF() {
+
+    var gifDisplay = $(".gifs").attr("data-name")
+    var queryURL = "http://api.giphy.com/v1/gifs/search?q=" + gifDisplay + "&api_key=sPfklQzrEwIhwetFX6WCEWYYYPYirfPv";
+    console.log(queryURL);
+    $.ajax({
+        url: queryURL,
+        method:"GET"
+
+    }).done(function(response){
+        console.log(response);
+        
+
+    })
+}
+
+
 
 
 
