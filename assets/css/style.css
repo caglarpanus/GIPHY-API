@@ -16,3 +16,11 @@ body{
     height: 530px;
     padding-top: 10px;
 }
+
+#gifsView {
+    height: 30px;
+    margin-top: 10px;
+}
+.btn-space {
+    margin-right: 5px;
+}
