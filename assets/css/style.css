@@ -3,6 +3,8 @@ body{
     margin: auto;
     text-align: center;
     padding: 0px 50px;
+    height: 100%;
+    width:100%;
 }
 .jumbotron{
     background-color: maroon;
@@ -20,7 +22,14 @@ body{
 #gifButtons {
     height: 30px;
     margin-top: 10px;
+    margin-bottom: 10px;
 }
 .btn-space {
     margin-right: 5px;
+}
+
+img{
+    padding: 5px;
+    width: 200px;
+    height: 200px;
 }
