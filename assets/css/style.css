@@ -15,7 +15,6 @@ body{
 }
 .container2{
     background-color: cornsilk;
-    height: 530px;
     padding-top: 10px;
 }
 
@@ -30,6 +29,21 @@ body{
 
 img{
     padding: 5px;
-    width: 200px;
-    height: 200px;
+    width: 175px;
+    height: 175px;
 }
+.imgContainer{
+    float: left;
+    padding: 2px;
+}
+
+#gifsView{
+    width: auto;
+    display: inline-block;
+
+}
+
+p{
+    background-color: aqua;
+}
+
