@@ -10,3 +10,12 @@ AJAX Practice
 * When you click on the image, the gif plays. When you click again, the gif stops playing.
 * Every gif is displayed its rating (PG, G, etc.).
 
+* You can access the app: https://caglarpanus.github.io/GIPHY-API/
+
+# Technologies Used
+
+* HTML
+* CSS, and Bootstrap
+* JavaScript
+* jQuery
+* AJAX 

@@ -55,7 +55,7 @@ $("#add-gif").on("click", function(event){
 });
 
 function displayGif(gifDisplay) {
-    var queryURL = "http://api.giphy.com/v1/gifs/search?q=" + gifDisplay + "&api_key=sPfklQzrEwIhwetFX6WCEWYYYPYirfPv&limit=16";
+    var queryURL = "https://api.giphy.com/v1/gifs/search?q=" + gifDisplay + "&api_key=sPfklQzrEwIhwetFX6WCEWYYYPYirfPv&limit=16";
     
     $.ajax({
         url: queryURL,
