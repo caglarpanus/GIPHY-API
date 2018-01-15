@@ -102,7 +102,7 @@ $(document).on("click", ".gifs", function() {
     displayGif(d)
 });
 
-
+//Pause function is being executed in here. State is chaging when the user clicked.
 $(document).on("click", ".image", function() {
     var state = $(this).attr("data-state");
     if ( state == "still"){
