@@ -51,6 +51,9 @@ $("#add-gif").on("click", function(event){
     
     searchedWords.push(gifs);
     renderButtons();
+
+    //Input should to be clean everytime when we add a new word.
+    $("#gif-input").val("");
     
 });
 
